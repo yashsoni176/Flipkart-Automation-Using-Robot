@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220407 15:14:16.740" rpa="false" schemaversion="3">
+<suite id="s1" name="Shopping" source="C:\Users\yashi\PycharmProjects\RoboticFramework\Tests\Flipkart\FunctionalTestSuite\shopping.robot">
+<test id="s1-t1" name="Google search page test case" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 15:14:16.909" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220407 15:14:16.909" endtime="20220407 15:14:19.200"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_flipkart}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:14:19.200" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20220407 15:14:19.200" endtime="20220407 15:14:19.200"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220407 15:14:19.201" endtime="20220407 15:14:19.201"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:LC20lb</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220407 15:14:19.201" endtime="20220407 15:14:19.201"/>
+</kw>
+<status status="FAIL" starttime="20220407 15:14:16.908" endtime="20220407 15:14:19.202">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20220407 15:14:16.741" endtime="20220407 15:14:19.202"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Shopping">Shopping</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
